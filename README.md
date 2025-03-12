@@ -16,6 +16,7 @@ Installation
 
 git clone https://github.com/Bharath07T/SnapNote---A-chrome-extension.git
 
+
 2)Load the Extension in Chrome
 
 Open Chrome and go to:
@@ -23,6 +24,7 @@ chrome://extensions/
 Enable Developer Mode (toggle in the top-right corner).
 Click "Load Unpacked" and select the SnapNote-Extension folder.
 The SnapNote icon will now appear in the Chrome toolbar.
+
 
 Usage
 
@@ -32,7 +34,9 @@ Click Save to store your note.
 Your note will be automatically retrieved the next time you open the extension.
 
 Project Structure
+
 SnapNote-Extension/
+
 │── assets/              # Contains images/icons
 │── popup.html           # UI for the popup window
 │── popup.js             # JavaScript logic for note saving
@@ -50,5 +54,6 @@ Chrome Storage API for saving notes
 Git & GitHub for version control
 
 License
+
 This project is open-source under the MIT License.
 
