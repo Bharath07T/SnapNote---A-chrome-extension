@@ -3,6 +3,7 @@ SnapNote - A Chrome Extension
 SnapNote is a simple and efficient Chrome extension that allows users to take quick notes and save them directly in their browser using Chrome's storage.
 
 Features
+
 ✅ Take quick notes effortlessly
 
 ✅ Save and retrieve notes anytime
@@ -12,6 +13,7 @@ Features
 ✅ User-friendly and clean UI
 
 Installation
+
 1)Download or Clone the Repository
 
 git clone https://github.com/Bharath07T/SnapNote---A-chrome-extension.git
@@ -38,12 +40,19 @@ Project Structure
 SnapNote-Extension/
 
 │── assets/              # Contains images/icons
+
 │── popup.html           # UI for the popup window
+
 │── popup.js             # JavaScript logic for note saving
+
 │── styles.css           # Styles for the extension
+
 │── manifest.json        # Extension configuration
+
 │── README.md            # Project documentation
+
 │── .gitignore           # Git ignore file
+
 
 Technologies Used
 
