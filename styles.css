@@ -67,15 +67,6 @@ body {
 .save-button:hover{
     transform:scale(1.08);
 }
-.list-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid grey;
-    border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: cyan;
-}
 .list{
     overflow-y: scroll;
     scrollbar-width: none;
