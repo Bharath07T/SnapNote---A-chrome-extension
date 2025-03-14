@@ -9,17 +9,29 @@ document.addEventListener("DOMContentLoaded", function () {
             const notes = Array.isArray(data.notes) ? data.notes : [];
 
             notes.forEach((note, index) => {
+                const newNote = inputbox.value.trim();
+                const notesLength=newNote.length;
                 const li = document.createElement("li");
                 li.textContent = note;
-                li.style.backgroundColor="cyan"
+                if (notesLength <= 150) {
+                    li.style.backgroundColor = "#FFF3CD"; // Large Note (Yellow)
+                } else if (notesLength <= 50) {
+                    li.style.backgroundColor = "#D4EDDA"; // Medium Note (Green)
+                } else {
+                    li.style.backgroundColor = "#F8D7DA"; // Small Note (Red)
+                }
                 li.style.listStyleType="none"
                 li.style.padding="10px"
                 li.style.alignItems="center"
                 li.style.justifyContent="center"
                 li.style.borderRadius="5px"
-                li.style.width="50%"
-                li.style.marginLeft="55px"
+                li.style.width="80%"
+                li.style.marginLeft="8px"
                 li.style.fontFamily="'Gill Sans MT"
+                li.style.marginTop="2%"
+                li.style.boxShadow="0px 0px 4px rgba(0,0,0,0.2)"
+                li.style.marginBottom="5%"
+                li.style.gap="50%"
 
 
                 const deleteButton = document.createElement("button");
