@@ -9,16 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
             const notes = Array.isArray(data.notes) ? data.notes : [];
 
             notes.forEach((note, index) => {
-                const newNote = inputbox.value.trim();
-                const notesLength=newNote.length;
                 const li = document.createElement("li");
                 li.textContent = note;
-                if (notesLength <= 150) {
-                    li.style.backgroundColor = "#FFF3CD"; // Large Note (Yellow)
-                } else if (notesLength <= 50) {
+
+                const wordCount = note.trim().split(/\s+/).length; 
+                if (wordCount <= 50) {
+                    li.style.backgroundColor = "#F8D7DA"; // Small Note (Red)
+                } else if (wordCount <= 150) {
                     li.style.backgroundColor = "#D4EDDA"; // Medium Note (Green)
                 } else {
-                    li.style.backgroundColor = "#F8D7DA"; // Small Note (Red)
+                    li.style.backgroundColor = "#FFF3CD"; // Large Note (Yellow)
                 }
                 li.style.listStyleType="none"
                 li.style.padding="10px"
