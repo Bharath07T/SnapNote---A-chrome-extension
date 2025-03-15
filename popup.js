@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 listContainer.style.display="flex";
                 listContainer.style.alignItems="center";
                 listContainer.style.justifyContent="space-between";
-                listContainer.style.marginBottom="10px";
+                listContainer.style.marginBottom="5px";
 
                 const li = document.createElement("li");
                 li.textContent = note;
