@@ -3,6 +3,11 @@
     "name": "SnapNote",
     "version": "1.0",
     "description": "SnapNote is a lightweight Chrome extension that allows you to quickly take, save, and manage notes directly in your browser. Your notes are automatically stored and remain available even after closing Chrome. Simple, fast, and efficient note-taking at your fingertips!",
+    "icons": {
+    "16": "assets/sticky-note.png",
+    "48": "assets/sticky-note.png",
+    "128": "assets/sticky-note.png"
+    },
     "permissions": ["storage"],
     "action": {
       "default_popup": "popup.html",
